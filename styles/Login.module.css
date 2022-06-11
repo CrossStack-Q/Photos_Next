@@ -1,0 +1,12 @@
+.logink{
+    background-image: url(../public/bgo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+@media all and (max-width: 1000px){
+    .logink{
+        background-image: none;
+    }
+}
