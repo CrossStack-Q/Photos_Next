@@ -36,7 +36,7 @@ function Login({ providers }) {
                   weight="bold"
                   h2
                 >
-                  Go to Google Photos
+                  Go to Google Photos Now
                 </Text>
               </Button>
             </div>
