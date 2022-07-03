@@ -32,15 +32,24 @@ function Main() {
   return (
     <div className={styles.feed}>
       <div className={styles.main}>
-      <Grid.Container gap={1}>
-        {photos.map((photos) => (
-          <Post
-          key={photos.data().username}
-            username={photos.data().username}
-            image={photos.data().image}
-          />
-        ))}
-        </Grid.Container>
+      {photos && (
+          <Grid.Container gap={1}>
+          {photos.map((photos) => (
+            <Post
+            key={photos.data().username}
+              username={photos.data().username}
+              image={photos.data().image}
+            />
+          ))}
+          </Grid.Container>
+        )}
+        {photos.length==0 && (
+          <div>
+            No photos
+          </div>
+        )
+
+        }
       </div>
     </div>
   );
