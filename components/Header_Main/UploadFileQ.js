@@ -37,7 +37,7 @@ function UploadFileQ() {
 
     const docRef = await addDoc(collection(db, "photos",`${session.user.email}`,`${session.user.email}`), {
       mail : session.user.email,
-      username: "Anurag Sharma",
+      username: session.user.name,
       timestamp: serverTimestamp(),
     });
 
