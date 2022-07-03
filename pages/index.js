@@ -8,7 +8,6 @@ import { getSession } from 'next-auth/react'
 
 function Home({session}) {
   if (!session) return <Login />;
-  console.log(session)
   return (
     <div className="">
       <Head>
